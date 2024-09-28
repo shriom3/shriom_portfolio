@@ -1,0 +1,283 @@
+/* Applying Google font over the website */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #f0f4f8;
+    color: #2d3748;
+}
+
+/* Styling menu icon */
+.nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #00b5d8;
+}
+
+/* Styling navbar links */
+.navbar-nav a {
+    color: #2d3748;
+    position: relative;
+    font-weight: 500;
+}
+.navbar-nav a:hover {
+    color: #00b5d8;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #00b5d8;
+    transition: width 0.3s ease, left 0.3s ease;
+    width: 0;
+}
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* Styling contact button */
+.c-btn {
+    border: none;
+    background: #00b5d8;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.c-btn:hover {
+    background: #007a9c;
+}
+/* Adding Animation to Home Section Image */
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Home section */
+.home {
+    background: linear-gradient(45deg, #e0f7fa 0%, #e0ffe4 100%);
+    padding: 30px 0;
+    text-align: center;
+}
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange {
+    color: #00b5d8;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+}
+.h-btn:hover {
+    background: #007a9c;
+    color: #fff;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+}
+
+
+/* Expertise section */
+.heading small {
+    color: #00b5d8;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #2d3748;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4 {
+    color: #2d3748;
+    font-weight: 700;
+}
+.expertise a {
+    text-decoration: none;
+    color: #00b5d8;
+}
+.expertise a:hover {
+    color: #007a9c;
+}
+.expertise .service-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Skill Section */
+.skill {
+    background-color: rgb(234, 234, 249);
+}
+
+.progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.progress-card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+.circular-progress {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.html-progress {
+    color: #fca61f;
+}
+
+.javascript-progress {
+    color: #6f34fe;
+}
+
+.php-progress {
+    color: #20c997;
+}
+
+.reactjs-progress {
+    color: #3f396d;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: 1.3rem;
+}
+/* Portfolio section */
+#myBtnContainer {
+    margin-bottom: 45px;
+    text-align: center;
+}
+#myBtnContainer button {
+    border: none;
+    color: #2d3748;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+#myBtnContainer button:hover {
+    color: #00b5d8;
+}
+
+/* Blog section */
+.blog {
+    background-color: #f0f4f8;
+}
+.blogpost h4, .blogpost a {
+    color: #2d3748;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.blogpost a:hover {
+    color: #00b5d8;
+}
+.blogpost .read-more-btn {
+    text-decoration: none;
+    color: #00b5d8;
+    font-size: 1.1rem;
+}
+.blogpost .read-more-btn:hover {
+    color: #007a9c;
+}
+
+/* Contact section */
+.contact {
+    background-color: #e6fffa;
+    padding: 60px 0;
+}
+.contact-details i {
+    font-size: 1.5rem;
+    color: #00b5d8;
+}
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* Footer section */
+footer {
+    background-color: #2d3748;
+    padding: 40px 0;
+    color: #a0aec0;
+}
+footer .link-group a {
+    text-decoration: none;
+    color: #a0aec0;
+    font-size: 1.1rem;
+}
+footer .link-group a:hover {
+    color: #00b5d8;
+}
+
+/* Back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #00b5d8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 3s infinite;
+}
